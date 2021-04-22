@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Learn Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+
+</head>
+<body>
+<nav class="navbar sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Learn Photography</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Photography Basics
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="NewTricks.html">New Tricks</a>
+                    <a class="dropdown-item" href="NewTricks.html">Camera Modes</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Editing.html">Editing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">FAQ</h1>
+            <p class="lead">Create | Shoot | Vision</p>
+        </div>
+    </div>
+<button class="accordion">What camera should i buy?</button>
+<div class="panel">
+    <p>Camera does not matter really. Your phone is the best camera. You carry around everywhere, easy to carry around.
+        Currently all the phones camera picture quality is as good as a DSLR. When buying DSLR Canon's rebel series camera's are very good.
+        They are not that expensive and comes with professional camera setting.</p>
+</div>
+
+<button class="accordion">What is ISO?</button>
+<div class="panel">
+    <p>ISO is a camera setting which can brighten or darken a photo. As you increase your ISO, it will brighten the picture when clicked.
+    It can help where there in darker environments. However, raising ISO too much will show lots of grain also known as noise. </p>
+</div>
+
+<button class="accordion">When do you use a ND filter?</button>
+<div class="panel">
+    <p>ND filter blocks the light in a neutral way without changing the color of the light. It is very useful when shooting Landscape photography.
+    As it provides more creative control over shutter speed. Normally ISO is set to the lowest setting and aperture between f/11 or f/16. </p>
+</div>
+
+<button class="accordion">What are your tips for low light photography?</button>
+<div class="panel">
+    <p>There is few things one can do in low light. Increase ISO Setting, Use slower shutter speed and adjust the aperture.
+    Additionally try to reduce a camera shake. Use Off camera flashes (OCD) which provide good lighting for the picture.</p>
+</div>
+
+<button class="accordion">What is the difference between manual and auto mode?</button>
+<div class="panel">
+    <p>Shooting in auto mode basically means camera controls all your setting while you just click a picture.
+    Shooting in manual is very different as you have more control over all settings. You get more creative with camera.
+    It helps you understand your camera better.</p>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+<footer class="footer page-footer font-small">
+    <div class="container">
+        <span class="text-muted">&copy; Akash Patel, Spring 2021 | Terms of Use | Privacy Statement</span>
+    </div>
+    </div>
+    <!-- DEVELOPER: Akash Patel, IS117-004, Spring 2021 -->
+    <!-- Footer -->
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
