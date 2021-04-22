@@ -21,7 +21,7 @@
 </head>
 <body>
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.html">Learn Photography</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -60,24 +60,26 @@
     </div>
 <div class="container">
     <form action="action_page.php">
-
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
 
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
+        <label for="subject">Subject</label>
+        <select id="Select" name="subject">
+            <option value="select">Select</option>
+            <option value="General">General</option>
+            <option value="Editing">Editing</option>
+            <option value="Photography">Photography</option>
+            <option value="Other">Other</option>
         </select>
 
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
         <input type="submit" value="Submit">
+
+
 
     </form>
 </div>

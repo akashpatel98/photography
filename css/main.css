@@ -82,6 +82,21 @@ input[type=submit]:hover {
 
 
 /* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #cac9c9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+
+form  {
+    margin-bottom: 3rem;
+}
 all-browsers {
     margin: 0;
     padding: 5px;
@@ -106,6 +121,7 @@ footer {
     padding: 3px;
     background-color: lightgrey;
     color: white;
+    margin-top: 2rem;
 }
 footer p{
     text-align: center;
