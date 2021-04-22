@@ -15,6 +15,20 @@
         $(document).ready(function(){
             $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
         });
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
     </script>
 
 </head>
@@ -63,22 +77,7 @@
         Currently all the phones camera picture quality is as good as a DSLR. When buying DSLR Canon's rebel series camera's are very good.
         They are not that expensive and comes with professional camera setting.</p>
 </div>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
 <button class="accordion">What is ISO?</button>
 <div class="panel">
     <p>ISO is a camera setting which can brighten or darken a photo. As you increase your ISO, it will brighten the picture when clicked.
@@ -103,6 +102,23 @@
     Shooting in manual is very different as you have more control over all settings. You get more creative with camera.
     It helps you understand your camera better.</p>
 </div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 <footer class="footer page-footer font-small">
     <div class="container">
