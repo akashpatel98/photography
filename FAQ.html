@@ -15,6 +15,20 @@
         $(document).ready(function(){
             $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
         });
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
     </script>
 
 </head>
@@ -88,23 +102,6 @@
     Shooting in manual is very different as you have more control over all settings. You get more creative with camera.
     It helps you understand your camera better.</p>
 </div>
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
 
 <footer class="footer page-footer font-small">
     <div class="container">
