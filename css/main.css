@@ -1,4 +1,7 @@
 /*DEVELOPER: Akash Patel, IS117-004, Spring, 2021 */
+.carousel-inner > .item {
+    height: auto;
+}
 /* FAQ */
 .accordion {
     background-color: #eee;
@@ -26,6 +29,29 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+/* Side by Side image */
+{
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
 }
 
 /* Footer */
